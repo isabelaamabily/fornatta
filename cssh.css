@@ -1,0 +1,894 @@
+html, body {
+    margin: 0;  /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    width: 100%; /* Garante que o corpo ocupe 100% da largura */
+}
+
+.button-container {
+    outline: none;
+    text-decoration: none;
+}
+.btn-order:focus {
+  outline: none;
+}
+
+.footer-background {
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    margin-left: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+.logo {
+    height: 70px;
+    margin-right: 20px;
+    margin-left: 6%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.menu-text {
+    font-weight: bold;
+    font-size: 22px;
+    color: #9b1b1b;
+    margin-left: -740px;
+    cursor: pointer;
+    
+}
+.location-info {
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+}
+.order-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.btn-order {
+    background-color: #861b15; 
+    color: white;
+    border: none;
+    padding: 22px 30px;
+    cursor: pointer;
+    border-radius: 40px; 
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.btnfranchise {
+    border: 1px solid #861b15; 
+    color: #861b15;
+    padding: 22px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #861b15;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    margin: 0;
+}
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-disclaimer {
+    background-color: #000;
+    color: #ffffff;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    
+    font-size: 14px;
+    padding: 50px 150px;
+    text-align: justify;
+    
+    
+}
+.logorodape {
+    width: 600px;
+    height: 200px;
+}
+
+.text-with-lines {
+    border-top: 1px solid white; 
+    border-bottom: 1px solid white; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0; 
+}
+
+.retangulo {
+    width: 100%;      
+    height: 800px;    
+    background-color: #861b15;
+}
+
+.retangulo img {
+    margin-left: 30%;
+}
+.pizzarodando{
+    animation: girar 50s linear infinite;
+    width: 600px;
+    height: 600px;
+    margin-top: 120px;
+    
+}
+.contorno{
+    animation: giraranti 180s linear infinite;
+    top: -700px;
+    width: 650px;
+    height: 650px;
+    position: relative;
+    left: 28.5%;
+    
+            }
+            
+@keyframes giraranti {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+    background-color: #861b15; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Torna o botão redondo */
+    cursor: pointer;
+    display: none;
+}
+
+#backToTopBtn:hover {
+    background-color: #b2221d; /* Cor ao passar o mouse */
+}
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color: #c61e37;
+    position: relative;
+    top: -655px;
+}
+h1 {
+    font-size: 90px;
+    font-family: serif;
+    color: #242424;
+    text-align: center;
+    position: relative;
+    top: -600px;
+}
+h2{
+    text-align: center;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 18px;
+    position: relative;
+    top: -570px;
+}
+.linha {
+    height: 100px;
+    width: 0.5px; 
+    background-color: black;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: -550px;
+}
+.linha1 {
+    height: 100px;
+    width: 0.5px; 
+    background-color: black;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: -5px;
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+    width: 100%; /* Largura total da tela */
+    overflow: hidden; /* Impede rolagem horizontal */
+    margin-top: -450px;
+}
+
+/* Estilos do iframe (vídeo) */
+iframe {
+    width: 80vw; /* Largura do vídeo - 80% da largura da tela */
+    height: 700px; /* Altura do vídeo - 60% da altura da tela */
+    transition: all 0.5s ease-in-out; /* Transição suave para aumento e rotação */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.play-video {
+    transform: scale(1.2) rotate(15deg);
+}
+
+
+
+/* Estilo para o container principal da promoção */
+        .promo-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff; /* Cor de fundo inicial */
+            border-radius: 50px;
+            padding: 20px;
+            max-width: 1115px;
+            margin: 20px auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out; /* Transição suave */
+        }
+
+        /* Estilo para a parte da imagem (pizza e refrigerante) */
+        .promo-image {
+            display: flex;
+            align-items: center;
+        }
+        
+
+        .promo-image img {
+            width: 700px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: -10px;
+        }
+
+        /* Estilo para o texto da promoção */
+        .promo-text {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .promo-text h4 {
+            font-size: 24px;
+            margin: 0;
+            color: #000000;
+        }
+
+        .promo-text h3 {
+            font-size: 50px;
+            margin: 0px 0;
+            color: #333333;
+        }
+
+        .promo-text .price {
+            font-size: 36px;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .promo-text .price span {
+            font-size: 20px;
+            color: #888;
+        }
+
+        .promo-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 80px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efeito ao passar o mouse sobre o container */
+        .promo-container:hover {
+            background-color: #c61e37; /* Cor de fundo quando passa o mouse */
+        }
+
+        .promo-container:hover .promo-text h2,
+        .promo-container:hover .promo-text h3 {
+            color: #fff; /* Altera a cor do texto */
+        }
+
+        .promo-container:hover .promo-button {
+            background-color: #ff9900; /* Muda a cor do botão */
+        }
+
+        .promo-container:hover .price {
+            color: #fff; /* Muda a cor do preço */
+        }
+
+        /* Efeito de sombra para o botão */
+        .promo-button:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        
+        /* Estilos para a seção promocional */
+        .promo-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            padding: 40px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+
+        .promo-app img {
+            width: 200px;
+            height: auto;
+        }
+
+        .promo-text {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .promo-text h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .promo-text p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .app-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .app-buttons img {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .qr-code {
+            text-align: center;
+        }
+
+        .qr-code img {
+            width: 150px;
+            height: auto;
+        }
+
+        .promo-code {
+            background-color: #ffcc00;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .discount {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .promo-details {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Estilos para a seção promocional */
+        .promo-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            padding: 40px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+
+        .promo-app img {
+            width: 200px;
+            height: auto;
+        }
+
+        .promo-text {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .promo-text h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .promo-text p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        
+        
+        /* Seção principal */
+        .top-pizzas {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+        }
+
+        .top-pizzas h5 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .top-pizzas p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        /* Estilos do carrossel */
+        .carousel-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pizza-carousel {
+            display: flex;
+            overflow: hidden;
+            width: 900px; /* largura para exibir 4 pizzas de uma vez */
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        /* Estilos das pizzas */
+        .pizza-item {
+            text-align: center;
+            width: 200px;
+            margin: 0 10px;
+            flex-shrink: 0;
+        }
+
+        .pizza-item img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pizza-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        
+
+        /* Layout responsivo */
+        @media (max-width: 768px) {
+            .pizza-item {
+                width: 150px;
+            }
+            
+            .pizza-item img {
+                width: 140px;
+                height: 140px;
+            }
+        }/* Corpo da página */
+/* Corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    height: 100%; /* Garantir que o corpo ocupe toda a altura */
+}
+
+
+/* Menu Lateral */
+.menu-lateral {
+    position: fixed; /* Menu fixo na tela */
+    top: 0;
+    left: -450px; /* Inicialmente fora da tela */
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 1000; /* Menu fica atrás do ícone */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto; /* Permite rolagem dentro do menu */
+}
+
+/* Cabeçalho do Menu */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-title {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: arial;
+    border-bottom: 0.1px solid #000;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+/* Fechar Menu */
+.fechar-menu {
+    background: none;
+    border: none;
+    color: black;
+    font-family: arial;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* Links do menu */
+.menu-itens {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.menu-itens li {
+    margin: 10px 0;
+}
+
+.menu-itens li a {
+    color: black;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 35px;
+    padding: 0; 
+    margin-left: 10px;
+}
+
+.menu-itens li a:hover {
+    background-color: #861b15; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+    padding: 10px;
+    width: 90%;
+    display: block;
+}
+
+/* Ajustes para o conteúdo da página */
+.page-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.page-content.menu-open {
+    margin-left: 400px; /* Empurra o conteúdo quando o menu está aberto */
+}
+.home {
+    font-weight: bold;
+}
+
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo da Seção de Boas-vindas */
+.welcome-section {
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    text-align: center;
+    color: #333; /* Cor do texto */
+}
+
+.welcome-section .title {
+    font-size: 3rem; /* Tamanho grande para o título */
+    font-weight: bold;
+    color: #861b15; /* Cor de destaque (similar à imagem) */
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.2rem; /* Texto de subtítulo */
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555; /* Cor do texto mais suave */
+}
+
+.welcome-section .btn {
+    background-color: #861b15;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-section .btn:hover {
+    background-color: #9e2a1b; /* Cor de hover mais intensa */
+}
+.titulo {
+    font-size: 60px;
+}
+
+/* Resetando o estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Resetando o estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo as cores principais */
+:root {
+    --primary-color: #F57C00; /* Laranja Fornatta */
+    --secondary-color: #C2185B; /* Rosa vibrante */
+    --accent-color: #FFEB3B; /* Amarelo para destacar */
+    --bg-color: #F5F5F5; /* Fundo claro */
+    --text-color: #333; /* Texto escuro */
+    --hover-color: #FF7043; /* Laranja mais suave para hover */
+    --red-color: #D32F2F; /* Vermelho para destaque */
+}
+
+/* Seção de boas-vindas */
+.welcome-section {
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideIn 1.5s forwards;
+    text-align: center;
+}
+
+/* Animação de entrada */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Títulos principais */
+.titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--red-color); /* Cor vermelha nos títulos */
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-out;
+    margin-bottom: 20px;
+}
+.titulovalores {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-out;
+    margin-bottom: 20px;
+    
+}
+
+/* Animação de fade */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilo para os parágrafos */
+section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+/* Botões */
+a.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+a.btn:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-5px);
+}
+
+/* Seção de missão */
+.missions {
+    background-color: var(--bg-color);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideIn 1.5s forwards;
+}
+
+.mission-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+.mission-container p {
+    color: white;
+    font-family: arial;
+    font-size: 1.2rem;
+}
+
+.margem {
+    margin: 100px;
+}
+.mission-box {
+    background-color: var(--red-color); /* Retângulo vermelho */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    color: white; /* Texto branco dentro do retângulo */
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mission-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Seção de propósito e valores */
+.about-us {
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #861b15;
+    text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideIn 1.5s forwards;
+}
+
+/* Adicionando retângulo vermelho ao fundo da seção de valores */
+.about-us p {
+    position: relative;
+    padding: 30px;
+    color: white;
+    font-size: 1rem;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Seção de equipe e cultura */
+.team-culture {
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideIn 1.5s forwards;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 30px;
+        margin: 15px;
+    }
+
+    .about-us p, .team-culture p {
+        font-size: 1rem;
+    }
+
+    a.btn {
+        font-size: 0.9rem;
+    }
+
+    .mission-container {
+        flex-direction: column;
+        color: white;
+    }
+
+    .mission-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+

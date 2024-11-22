@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Fornatta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cssp.css">
+        
+        <link rel="icon" href="https://i.ibb.co/Gt2nNPZ/image-removebg-preview.png" type="image/png">
+        
+    </head>
+    <body>
+        
+
+        
+        <button onclick="topFunction()" id="backToTopBtn">↑</button>
+        
+        <div class="footer-background">
+            <div class="container">
+        <img src="https://i.ibb.co/0VRdVNQ/pizza-2.png" alt="Logo Pizzaria" class="logo">
+        <nav>
+            <ul>
+                <li><span class="menu-text" onclick="abrirMenu()">Menu</span></li>
+                
+                
+    <li><span class="menu-text" onclick="abrirMenu()">Menu</span></li>
+
+    <li>
+        <a href="produto.html" class="button-container">
+            <button class="btn-order">
+                <img src="https://i.ibb.co/Z6NSH4Z/pizza-1.png" alt="Ícone de Pedido" class="order-icon">
+                Fazer Pedido
+            </button>
+        </a>
+    </li>
+
+    <li>
+        <a href="contato.html" class="btnfranchise">Seja um Franqueado</a>
+    </li>
+</ul>
+        </nav>
+    </div>
+            </div>
+        
+    
+    
+    <div id="menuLateral" class="menu-lateral">
+            <div class="menu-header">
+                <span class="menu-title">Menu</span>
+                <button class="fechar-menu" onclick="fecharMenu()">X</button>
+            </div>
+            <ul class="menu-itens">
+                <li><a href="index.html" class="home">Home</a><li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    
+        <div class="container">
+    <div class="products-grid">
+      <!-- Gera automaticamente via JS -->
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="pizzaModal">
+    <div class="modal-content">
+      <div class="modal-left">
+        <img id="pizzaImage" src="" alt="Pizza">
+      </div>
+      <div class="modal-right">
+        <span class="pizza-type" id="pizzaType"></span>
+        <h2 id="pizzaName"></h2>
+        <p id="pizzaDescription"></p>
+      </div>
+      <button class="close-modal" onclick="closeModal()">X</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+   
+        <footer>
+    <div class="footer-logo">
+        <img src="https://i.ibb.co/zhBkRXC/pizza-2.png" alt="Fornatta" class="logorodape"> 
+        
+    </div>
+            <br>
+    <div class="footer-text">2024 Fornatta. Todos os direitos reservados</div>
+    <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Termos dos Cupons</a>
+    </div>
+</footer>
+    <div class="footer-disclaimer">
+        <div class="text-with-lines">
+    As promoções da Fornatta são válidas enquanto houver estoque disponível e podem variar conforme a sua localização. Oferecemos condições especiais de pagamento exclusivamente para compras realizadas online. Lembramos que os preços exibidos já incluem impostos e que as imagens são meramente ilustrativas, podendo não refletir exatamente os produtos oferecidos. Caso haja qualquer divergência nos valores ou promoções, o preço válido será o indicado no carrinho de compras. A Fornatta se reserva o direito de modificar ou remover itens e promoções do cardápio sem aviso prévio. O horário de funcionamento e de entrega pode variar conforme a unidade escolhida e a sua localização. Para verificar a disponibilidade de entrega em sua região, informe seu CEP.
+        
+   
+</div>
+       <script src="jsp.js"></script> 
+    </body>
+</html>

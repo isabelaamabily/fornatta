@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Fornatta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cssc.css">
+        
+        <link rel="icon" href="https://i.ibb.co/Gt2nNPZ/image-removebg-preview.png" type="image/png">
+    </head>
+    <body>
+        <script src="jsc.js"></script>
+        
+        
+        <button onclick="topFunction()" id="backToTopBtn">↑</button>
+        
+        <div class="footer-background">
+            <div class="container">
+        <img src="https://i.ibb.co/0VRdVNQ/pizza-2.png" alt="Logo Pizzaria" class="logo">
+        <nav>
+            <ul>
+                <li><span class="menu-text" onclick="abrirMenu()">Menu</span></li>
+                
+                <li>
+                <a href="produto.html" class="button-container">
+                        <button class="btn-order">
+                            <img src="https://i.ibb.co/Z6NSH4Z/pizza-1.png" alt="Ícone de Pedido" class="order-icon">
+                            Fazer Pedido
+                        </button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contato.html" class="btnfranchise">Seja um Franqueado</a>
+                </li>
+                
+                
+            </ul>
+        </nav>
+    </div>
+            </div>
+        
+        <div id="menuLateral" class="menu-lateral">
+            <div class="menu-header">
+                <span class="menu-title">Menu</span>
+                <button class="fechar-menu" onclick="fecharMenu()">X</button>
+            </div>
+            <ul class="menu-itens">
+                <li><a href="index.html" class="home">Home</a><li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        
+        
+        
+        <header>
+        <h1>Fale Conosco</h1>
+    </header>
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    <section class="contact-section">
+        <div class="contact-form-container">
+            <h6>Entre em Contato</h6>
+            <form id="contact-form">
+                <label for="name">Nome</label>
+                <input type="text" name="from_name" id="name" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" name="reply_to" id="email" required>
+
+                <label for="subject">Assunto</label>
+                <input type="text" name="subject" id="subject" required>
+
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" required></textarea>
+
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Informações de Contato</h3>
+                <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                <p><strong>E-mail:</strong> contato@fornatta.com.br</p>
+                <p><strong>Endereço:</strong> Rua da Pizza, 123, Bairro Saboroso, São Paulo, SP</p>
+            </div>
+        </div>
+    </section>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        
+        
+        <footer>
+    <div class="footer-logo">
+        <img src="https://i.ibb.co/zhBkRXC/pizza-2.png" alt="Fornatta" class="logorodape"> 
+        
+    </div>
+            <br>
+    <div class="footer-text">2024 Fornatta. Todos os direitos reservados</div>
+    <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Termos dos Cupons</a>
+    </div>
+</footer>
+    <div class="footer-disclaimer">
+        <div class="text-with-lines">
+    As promoções da Fornatta são válidas enquanto houver estoque disponível e podem variar conforme a sua localização. Oferecemos condições especiais de pagamento exclusivamente para compras realizadas online. Lembramos que os preços exibidos já incluem impostos e que as imagens são meramente ilustrativas, podendo não refletir exatamente os produtos oferecidos. Caso haja qualquer divergência nos valores ou promoções, o preço válido será o indicado no carrinho de compras. A Fornatta se reserva o direito de modificar ou remover itens e promoções do cardápio sem aviso prévio. O horário de funcionamento e de entrega pode variar conforme a unidade escolhida e a sua localização. Para verificar a disponibilidade de entrega em sua região, informe seu CEP.
+        
+   
+</div>
+        
+        <!-- Adicionando o script do EmailJS -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    // Inicializar o EmailJS com a Public Key
+    emailjs.init('tE50XkEf5RRhw3eNe');
+
+    // Adicionar o evento de envio ao formulário
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita o comportamento padrão do formulário
+        console.log('Formulário enviado!'); // Verificar se o envio foi disparado
+
+        // Enviar os dados do formulário via EmailJS
+        emailjs.sendForm('service_ks9rofc', 'template_u8fesuo', this)
+            .then(function (response) {
+                console.log('Resposta de sucesso:', response); // Para verificar a resposta
+                alert('Mensagem enviada com sucesso!');
+            })
+            .catch(function (error) {
+                console.error('Erro no envio:', error); // Para detalhar o erro
+                alert('Ocorreu um erro ao enviar a mensagem: ' + error.text); // Exibir mensagem de erro
+            });
+
+        // Limpar o formulário após o envio
+        this.reset();
+    });
+</script>
+
+
+    </body>
+</html>
